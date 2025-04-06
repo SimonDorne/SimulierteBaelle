@@ -1,7 +1,6 @@
 import turtle
 import random
 
-
 def color_func(value):
     # Hex codes for yellow and red
     yellow = (255, 255, 0)
@@ -15,8 +14,6 @@ def color_func(value):
     
     # Returning the color as a hex string
     return f'#{r:02X}{g:02X}{b:02X}'
-
-
 
 window=turtle.Screen()
 window.bgcolor("black")
@@ -133,24 +130,8 @@ while True:
         if abs(ball.xcor())+pixels_offset >length/2:
             ball.dx*=-1
             ball.setx(ball.xcor()+ball.dx*1.1)
-            
-        
 
 
+if __name__ == "__main__":
+    window.mainloop()
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-window.mainloop()
