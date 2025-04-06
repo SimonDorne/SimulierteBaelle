@@ -6,17 +6,15 @@ def color_func(value):
     # Hex codes for yellow and red
     yellow = (255, 255, 0)
     red = (255, 0, 0)
-    
+
     # Interpolating the color
     ratio = value / 10.0
     r = int(red[0] * ratio + yellow[0] * (1 - ratio))
     g = int(red[1] * ratio + yellow[1] * (1 - ratio))
     b = int(red[2] * ratio + yellow[2] * (1 - ratio))
-    
+
     # Returning the color as a hex string
     return f'#{r:02X}{g:02X}{b:02X}'
-
-
 
 window=turtle.Screen()
 window.bgcolor("black")
@@ -125,23 +123,17 @@ while True:
                     balls[i].sety(balls[i].ycor() - shift_y)
                     balls[j].setx(balls[j].xcor() + shift_x)
                     balls[j].sety(balls[j].ycor() + shift_y)
-        
+
         if ball.ycor()-pixels_offset <-height/2:
             ball.dy *=-1
             ball.sety(ball.ycor()+ball.dy*1.1)
-    
+
         if abs(ball.xcor())+pixels_offset >length/2:
             ball.dx*=-1
             ball.setx(ball.xcor()+ball.dx*1.1)
-            
-        
 
 
-
-    
-
-
-
+    # test
 
 
 
