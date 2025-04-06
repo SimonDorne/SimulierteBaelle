@@ -1,7 +1,6 @@
 import turtle
 import random
 
-
 def color_func(value):
     # Hex codes for yellow and red
     yellow = (255, 255, 0)
@@ -133,16 +132,7 @@ while True:
             ball.setx(ball.xcor()+ball.dx*1.1)
 
 
-    # test
 
+if __name__ == "__main__":
+    window.mainloop()
 
-
-
-
-
-
-
-
-
-
-window.mainloop()
